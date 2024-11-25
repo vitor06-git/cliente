@@ -1,5 +1,9 @@
 package com.maddytec.cliente.repository;
 
-public interface ClienteRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.maddytec.cliente.entity.Cliente;
+
+public interface ClienteRepository extends JpaRepository<Cliente, Long>{
 
 }
